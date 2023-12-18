@@ -1,0 +1,33 @@
+/* Основные стили для изображения */
+.img1 img {
+    /* Устанавливаем продолжительность анимации 2 секунды */
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    
+    /* Устанавливаем начальный масштаб изображения (без масштабирования) */
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    
+    /* Устанавливаем функцию сглаживания анимации */
+    transition-timing-function: ease;
+}
+
+/* Стили для изображения при наведении */
+.img1:hover img {
+    /* Увеличиваем масштаб изображения при наведении до 1.1 */
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    
+    /* Фиксируем изображение в центре экрана */
+    position: fixed;
+    top: 15%;
+    left: 22%;
+    
+    /* Задаем белый фон */
+    background: #FFF;
+    
+    /* Устанавливаем высокий уровень z-index для изображения */
+    z-index: 10000;
+}
